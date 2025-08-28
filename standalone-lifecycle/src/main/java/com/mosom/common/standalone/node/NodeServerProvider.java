@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : NodeServerProvider
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ ¼­ºñ½ºÀÇ Node Server Provider Á¤º¸
+ * í”„ë¡œê·¸ë¨ëª… : NodeServerProvider
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ ì„œë¹„ìŠ¤ì˜ Node Server Provider ì •ë³´
  */
 package com.mosom.common.standalone.node;
 
@@ -82,7 +82,7 @@ public class NodeServerProvider {
                 String state = (String) mbsc.getAttribute(serverRuntime, "State");
                 HealthState health = (HealthState) mbsc.getAttribute(serverRuntime, "HealthState");
 
-                //Management Server RuntimeÀº Á¦¿Ü
+                //Management Server Runtimeì€ ì œì™¸
                 if (exclusionPorts.contains(String.valueOf(listenPort))) {
                     continue;
                 }

@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : NodeServerCommands
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Lifecycle ¼­ºñ½ºÀÇ ¸í·É
+ * í”„ë¡œê·¸ë¨ëª… : NodeServerCommands
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Lifecycle ì„œë¹„ìŠ¤ì˜ ëª…ë ¹
  */
 package com.mosom.common.standalone.node;
 

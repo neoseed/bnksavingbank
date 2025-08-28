@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : ObjectMapperSerializationSupport
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2024.11.08)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2024.11.08)
- * Àû¡¡¡¡¡¡¿ä : ¾÷¹«¸Á³» ½Ã½ºÅÛ REST API Service - Servlet Response ´ëÀÀ
+ * í”„ë¡œê·¸ë¨ëª… : ObjectMapperSerializationSupport
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2024.11.08)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2024.11.08)
+ * ì ã€€ã€€ã€€ìš” : ì—…ë¬´ë§ë‚´ ì‹œìŠ¤í…œ REST API Service - Servlet Response ëŒ€ì‘
  */
 package com.mosom.common.standalone.servlet;
 

@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : LifecycleProfile
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Lifecycle ¼­ºñ½ºÀÇ Profile
+ * í”„ë¡œê·¸ë¨ëª… : LifecycleProfile
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Lifecycle ì„œë¹„ìŠ¤ì˜ Profile
  */
 package com.mosom.common.standalone;
 

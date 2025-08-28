@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : OptionGenerator
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.17)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.17)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ ¼­ºñ½º Option »ı¼º Á¦°øÀÚ
+ * í”„ë¡œê·¸ë¨ëª… : OptionGenerator
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.17)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.17)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ ì„œë¹„ìŠ¤ Option ìƒì„± ì œê³µì
  */
 package com.mosom.common.standalone;
 

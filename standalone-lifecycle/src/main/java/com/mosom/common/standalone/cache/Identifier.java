@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : Identifier
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Cache ¼­ºñ½ºÀÇ Data Á¢±Ù ½Äº°ÀÚ Interface
+ * í”„ë¡œê·¸ë¨ëª… : Identifier
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Cache ì„œë¹„ìŠ¤ì˜ Data ì ‘ê·¼ ì‹ë³„ì Interface
  */
 package com.mosom.common.standalone.cache;
 

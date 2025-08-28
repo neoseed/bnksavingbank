@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : EventTrackerStarter
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.17)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.17)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Event Tracker ¼­ºñ½ºÀÇ ½ÇÇà
+ * í”„ë¡œê·¸ë¨ëª… : EventTrackerStarter
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.17)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.17)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Event Tracker ì„œë¹„ìŠ¤ì˜ ì‹¤í–‰
  */
 package com.mosom.common.standalone.cache.helper;
 

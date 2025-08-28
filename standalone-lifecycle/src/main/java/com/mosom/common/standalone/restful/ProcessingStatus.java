@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : ProcessingStatus
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.03.08)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.03.08)
- * Àû¡¡¡¡¡¡¿ä : ¾÷¹«¸Á³» ½Ã½ºÅÛ REST API Service - Ã³¸® »óÅÂ
+ * í”„ë¡œê·¸ë¨ëª… : ProcessingStatus
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.03.08)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.03.08)
+ * ì ã€€ã€€ã€€ìš” : ì—…ë¬´ë§ë‚´ ì‹œìŠ¤í…œ REST API Service - ì²˜ë¦¬ ìƒíƒœ
  */
 package com.mosom.common.standalone.restful;
 

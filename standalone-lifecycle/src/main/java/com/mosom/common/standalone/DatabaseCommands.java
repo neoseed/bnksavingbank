@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : DatabaseCommands
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * Àû¡¡¡¡¡¡¿ä : Database ¸í·É
+ * í”„ë¡œê·¸ë¨ëª… : DatabaseCommands
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì ã€€ã€€ã€€ìš” : Database ëª…ë ¹
  */
 package com.mosom.common.standalone;
 

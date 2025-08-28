@@ -1,18 +1,18 @@
 /*
- * ÇÁ·Î±×·¥¸í : Preconditions
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.03.08)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.03.08)
- * Àû¡¡¡¡¡¡¿ä : ¾÷¹«¸Á³» ½Ã½ºÅÛ REST API Service - URI ÇÊ¼ö ¿ä¼Ò
+ * í”„ë¡œê·¸ëž¨ëª… : Preconditions
+ * ì„¤ã€€ê³„ã€€ìž : Thomas Parker(ìž„ì˜ˆì¤€) - (2023.03.08)
+ * ìž‘ã€€ì„±ã€€ìž : Thomas Parker(ìž„ì˜ˆì¤€) - (2023.03.08)
+ * ì ã€€ã€€ã€€ìš” : ì—…ë¬´ë§ë‚´ ì‹œìŠ¤í…œ REST API Service - URI í•„ìˆ˜ ìš”ì†Œ
  */
 package com.mosom.common.standalone.restful;
 
 public enum Preconditions {
 
     /**
-     * REQUESTER        : ¿äÃ»ÀÚ
-     * RESPONSE_TYPE    : ÀÀ´ä Çü½Ä
-     * RESPONSE_CHARSET : ÀÀ´ä ¹®ÀÚ¼Â
-     * DOMAIN           : ¿äÃ» ¾÷¹« ¿µ¿ª
+     * REQUESTER        : ìš”ì²­ìž
+     * RESPONSE_TYPE    : ì‘ë‹µ í˜•ì‹
+     * RESPONSE_CHARSET : ì‘ë‹µ ë¬¸ìžì…‹
+     * DOMAIN           : ìš”ì²­ ì—…ë¬´ ì˜ì—­
      */
     REQUESTER, RESPONSE_TYPE, RESPONSE_CHARSET, RESPONSE_PROVIDER
 

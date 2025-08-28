@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : ServerNodeHandler
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : ¾÷¹«¸Á³» ½Ã½ºÅÛ REST API Service - ÀÀ´ä Á¦°øÀÚ ServerNodeHandler
+ * í”„ë¡œê·¸ë¨ëª… : ServerNodeHandler
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ì—…ë¬´ë§ë‚´ ì‹œìŠ¤í…œ REST API Service - ì‘ë‹µ ì œê³µì ServerNodeHandler
  */
 package com.mosom.common.standalone.restful.handler;
 

@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : DataCacheTypeNames
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.17)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.17)
- * Àû¡¡¡¡¡¡¿ä : Database Cache À¯Çü ÀÌ¸§
+ * í”„ë¡œê·¸ë¨ëª… : DataCacheTypeNames
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.17)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.17)
+ * ì ã€€ã€€ã€€ìš” : Database Cache ìœ í˜• ì´ë¦„
  */
 package com.mosom.common.standalone.cache.data;
 

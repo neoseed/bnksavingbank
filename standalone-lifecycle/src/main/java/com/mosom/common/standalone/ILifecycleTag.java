@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : ILifecycleTag
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ ¼­ºñ½ºÀÇ Group Á¢±Ù ½Äº°ÀÚ Interface
+ * í”„ë¡œê·¸ë¨ëª… : ILifecycleTag
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ ì„œë¹„ìŠ¤ì˜ Group ì ‘ê·¼ ì‹ë³„ì Interface
  */
 package com.mosom.common.standalone;
 

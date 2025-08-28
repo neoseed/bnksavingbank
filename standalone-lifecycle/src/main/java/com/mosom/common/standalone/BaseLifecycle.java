@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : BaseLifecycle
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ ¼­ºñ½ºÀÇ ±âº» ±¸ÇöÃ¼
+ * í”„ë¡œê·¸ë¨ëª… : BaseLifecycle
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ ì„œë¹„ìŠ¤ì˜ ê¸°ë³¸ êµ¬í˜„ì²´
  */
 package com.mosom.common.standalone;
 
@@ -55,17 +55,17 @@ abstract public class BaseLifecycle implements ILifecycle {
     protected boolean isValidTransition(LifecycleSituations next) {
         switch (situation) {
             case SHUTDOWN:
-                //INITIALIZE¸¸ Çã¿ë
+                //INITIALIZEë§Œ í—ˆìš©
                 return next == INITIALIZE;
             case INITIALIZE:
-                //SHUTDOWN ¶Ç´Â STARTING ¶Ç´Â RUNNING Çã¿ë
+                //SHUTDOWN ë˜ëŠ” STARTING ë˜ëŠ” RUNNING í—ˆìš©
                 return next == SHUTDOWN || next == STARTING || next == RUNNING;
             case STARTING:
             case RELOADING:
-                //RUNNING¸¸ Çã¿ë
+                //RUNNINGë§Œ í—ˆìš©
                 return next == RUNNING;
             case RUNNING:
-                //RELOADING ¶Ç´Â SHUTDOWN Çã¿ë
+                //RELOADING ë˜ëŠ” SHUTDOWN í—ˆìš©
                 return next == RELOADING || next == SHUTDOWN;
             default:
                 return false;

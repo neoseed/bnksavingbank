@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : CacheableException
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Cache ¼­ºñ½ºÀÇ Exception
+ * í”„ë¡œê·¸ë¨ëª… : CacheableException
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Cache ì„œë¹„ìŠ¤ì˜ Exception
  */
 package com.mosom.common.standalone.cache;
 

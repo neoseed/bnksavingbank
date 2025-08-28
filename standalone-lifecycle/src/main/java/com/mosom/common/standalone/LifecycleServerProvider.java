@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : LifecycleServerProvider
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2024.11.08)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2024.11.08)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ ¼­ºñ½ºÀÇ Server Provider Á¤º¸
+ * í”„ë¡œê·¸ë¨ëª… : LifecycleServerProvider
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2024.11.08)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2024.11.08)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ ì„œë¹„ìŠ¤ì˜ Server Provider ì •ë³´
  */
 package com.mosom.common.standalone;
 

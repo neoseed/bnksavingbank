@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : UnifyMobileMessageMonitor
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : UnifyMobileMessage Monitor
+ * í”„ë¡œê·¸ë¨ëª… : UnifyMobileMessageMonitor
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : UnifyMobileMessage Monitor
  */
 package com.mosom.common.standalone.watcher.monitor;
 
@@ -200,8 +200,8 @@ public class UnifyMobileMessageMonitor extends ScheduleWatcher<List<UnifyMobileM
             if (activeAgent.isNotificationUse() && activeAgent.isNotification()) {
                 Identifier id;
 
-                //UMS ½ºÀ§Ä¡ ¸ğµå ÀÏ ¶§, UMS Àå¾Ö ¹ß»ı ½Ã DKT·Î Àå¾Ö¾Ë¸² ¹ß¼Û
-                //DKT ½ºÀ§Ä¡ ¸ğµå ÀÏ ¶§, DKT Àå¾Ö ¹ß»ı ½Ã UMS·Î Àå¾Ö¾Ë¸² ¹ß¼Û
+                //UMS ìŠ¤ìœ„ì¹˜ ëª¨ë“œ ì¼ ë•Œ, UMS ì¥ì•  ë°œìƒ ì‹œ DKTë¡œ ì¥ì• ì•Œë¦¼ ë°œì†¡
+                //DKT ìŠ¤ìœ„ì¹˜ ëª¨ë“œ ì¼ ë•Œ, DKT ì¥ì•  ë°œìƒ ì‹œ UMSë¡œ ì¥ì• ì•Œë¦¼ ë°œì†¡
                 if ("UMS".equals(activeAgent.getName())) {
                     id = serial(SQLXML, "API-WATCHER", "UMMM_DKT_INSERT_NOTIFICATION");
                 } else {

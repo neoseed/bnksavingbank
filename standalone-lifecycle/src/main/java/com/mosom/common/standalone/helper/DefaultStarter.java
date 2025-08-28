@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : DefaultStarter
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Lifecycle ¼­ºñ½ºÀÇ ½ÇÇà
+ * í”„ë¡œê·¸ëž¨ëª… : DefaultStarter
+ * ì„¤ã€€ê³„ã€€ìž : Thomas Parker(ìž„ì˜ˆì¤€) - (2025.08.04)
+ * ìž‘ã€€ì„±ã€€ìž : Thomas Parker(ìž„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Lifecycle ì„œë¹„ìŠ¤ì˜ ì‹¤í–‰
  */
 package com.mosom.common.standalone.helper;
 
@@ -36,12 +36,12 @@ public class DefaultStarter implements ILifecycleStarter {
             if (isRunningTarget(profile, String.valueOf(port))) {
                 if (profile.option instanceof IScheduleOption) {
                     IScheduleOption o = (IScheduleOption) profile.option;
-                    //Schedule Delay ¿É¼ÇÀÇ °æ¿ì ÀÎ½ºÅÏ½º ¼­¹öÀÇ ±âµ¿Æ÷Æ® ³¡ÀÚ¸® ¼ö ¸¸Å­ Delay ½Ã°£(Minute) Ãß°¡
-                    //ÀÎ½ºÅÏ½º ¼­¹ö°¡ °¢°¢ µ¿½Ã¿¡ ±âµ¿µÉ ¶§ DBMS ºÎÇÏ¸¦ ¸·±â À§ÇØ ±âµ¿ °£°Ý Á¶Á¤
-                    //6611 => 1ºÐ Delay Ãß°¡
-                    //6612 => 2ºÐ Delay Ãß°¡
-                    //6613 => 3ºÐ Delay Ãß°¡
-                    //6619 => 9ºÐ Delay Ãß°¡
+                    //Schedule Delay ì˜µì…˜ì˜ ê²½ìš° ì¸ìŠ¤í„´ìŠ¤ ì„œë²„ì˜ ê¸°ë™í¬íŠ¸ ëìžë¦¬ ìˆ˜ ë§Œí¼ Delay ì‹œê°„(Minute) ì¶”ê°€
+                    //ì¸ìŠ¤í„´ìŠ¤ ì„œë²„ê°€ ê°ê° ë™ì‹œì— ê¸°ë™ë  ë•Œ DBMS ë¶€í•˜ë¥¼ ë§‰ê¸° ìœ„í•´ ê¸°ë™ ê°„ê²© ì¡°ì •
+                    //6611 => 1ë¶„ Delay ì¶”ê°€
+                    //6612 => 2ë¶„ Delay ì¶”ê°€
+                    //6613 => 3ë¶„ Delay ì¶”ê°€
+                    //6619 => 9ë¶„ Delay ì¶”ê°€
                     long initialDelay = o.initialDelay() + (port % 10);
                     profile.option = schedule(
                             o.isClearAtStart()

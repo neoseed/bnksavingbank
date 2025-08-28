@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : BaseIdentifier
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Cache ¼­ºñ½ºÀÇ Model Key ±âº» ±¸ÇöÃ¼
+ * í”„ë¡œê·¸ë¨ëª… : BaseIdentifier
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Cache ì„œë¹„ìŠ¤ì˜ Model Key ê¸°ë³¸ êµ¬í˜„ì²´
  */
 package com.mosom.common.standalone.cache;
 

@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : ISelfManageable
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2024.12.11)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2024.12.11)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Cache ¼­ºñ½º ÀÚÃ¼ °ü¸®¸¦ À§ÇÑ Interface
+ * í”„ë¡œê·¸ë¨ëª… : ISelfManageable
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2024.12.11)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2024.12.11)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Cache ì„œë¹„ìŠ¤ ìì²´ ê´€ë¦¬ë¥¼ ìœ„í•œ Interface
  */
 package com.mosom.common.standalone.cache;
 

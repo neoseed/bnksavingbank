@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : CodeCacheEventTracker
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * Àû¡¡¡¡¡¡¿ä : Database(Table Trigger) Event Tracker
+ * í”„ë¡œê·¸ë¨ëª… : CodeCacheEventTracker
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì ã€€ã€€ã€€ìš” : Database(Table Trigger) Event Tracker
  */
 package com.mosom.common.standalone.cache.data;
 
@@ -59,8 +59,8 @@ public class CodeCacheEventTracker extends ScheduleEventTracker {
         PreparedStatement pstmt = null;
 
         try {
-            //TODO:THOMAS-PK:2023-08-09:API-CACHE.DELETE_CODE_HISTORY SQL Á¤ÀÇµÇ¾î ÀÖÁö ¾ÊÀ½
-            //3ÀÏ Àü ½ÃÁ¡ºÎÅÍ °ú°ÅÀÇ µ¥ÀÌÅÍ¸¦ »èÁ¦
+            //TODO:THOMAS-PK:2023-08-09:API-CACHE.DELETE_CODE_HISTORY SQL ì •ì˜ë˜ì–´ ìˆì§€ ì•ŠìŒ
+            //3ì¼ ì „ ì‹œì ë¶€í„° ê³¼ê±°ì˜ ë°ì´í„°ë¥¼ ì‚­ì œ
             Identifier id = serial(SQLXML, "API-CACHE", "DELETE_CODE_HISTORY");
             pstmt = con.prepareStatement(SQLXmlCache.instance().one(id).getStatement());
             pstmt.executeUpdate();
@@ -84,7 +84,7 @@ public class CodeCacheEventTracker extends ScheduleEventTracker {
         ResultSet rs = null;
 
         try {
-            //TODO:THOMAS-PK:2023-08-09:API-CACHE.SELECT_CODE_HISTORY SQL Á¤ÀÇµÇ¾î ÀÖÁö ¾ÊÀ½
+            //TODO:THOMAS-PK:2023-08-09:API-CACHE.SELECT_CODE_HISTORY SQL ì •ì˜ë˜ì–´ ìˆì§€ ì•ŠìŒ
             Identifier id = serial(SQLXML, "API-CACHE", "SELECT_CODE_HISTORY");
             Connection con = dataSourceProvider.getConnection(true);
             pstmt = con.prepareStatement(SQLXmlCache.instance().one(id).getStatement());

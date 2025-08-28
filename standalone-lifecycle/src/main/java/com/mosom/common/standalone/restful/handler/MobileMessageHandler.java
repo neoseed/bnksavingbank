@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : MobileMessageHandler
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : ¾÷¹«¸Á³» ½Ã½ºÅÛ REST API Service - ÀÀ´ä Á¦°øÀÚ MobileMessage(¹ß¼Û ¸ğµâ °øÅë)
+ * í”„ë¡œê·¸ë¨ëª… : MobileMessageHandler
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ì—…ë¬´ë§ë‚´ ì‹œìŠ¤í…œ REST API Service - ì‘ë‹µ ì œê³µì MobileMessage(ë°œì†¡ ëª¨ë“ˆ ê³µí†µ)
  */
 package com.mosom.common.standalone.restful.handler;
 
@@ -35,9 +35,9 @@ abstract public class MobileMessageHandler<T> extends BaseProcessHandler {
     enum SendRanges {
 
         /**
-         * RANGE_SINGLE      : 100°³ ÀÌÇÏ
-         * RANGE_MULTI       : 5000°³ ÀÌÇÏ
-         * RANGE_MULTI_ASYNC : 5000°³ ÀÌ»ó ºñµ¿±â ´ë·®¹ß¼Û
+         * RANGE_SINGLE      : 100ê°œ ì´í•˜
+         * RANGE_MULTI       : 5000ê°œ ì´í•˜
+         * RANGE_MULTI_ASYNC : 5000ê°œ ì´ìƒ ë¹„ë™ê¸° ëŒ€ëŸ‰ë°œì†¡
          */
         RANGE_SINGLE(100)
         , RANGE_MULTI(5000)
@@ -182,17 +182,17 @@ abstract public class MobileMessageHandler<T> extends BaseProcessHandler {
         setDatabaseQueries();
 
         switch (SendRanges.range(messageSpecifications.size())) {
-            //100°Ç ÀÌÇÏ ¹ß¼ÛÀÇ °æ¿ì, °³º° ´Ü°Ç¹ß¼Û
+            //100ê±´ ì´í•˜ ë°œì†¡ì˜ ê²½ìš°, ê°œë³„ ë‹¨ê±´ë°œì†¡
             case RANGE_SINGLE:
                 sendToSingle();
                 break;
-            //5000°Ç ÀÌÇÏ ´ë·®¹ß¼ÛÀÇ °æ¿ì, ÀÛ¾÷ È¿À²À» À§ÇØ ¹èÄ¡µ¿ÀÛ ¼öÇà
-            //¹èÄ¡µ¿ÀÛÀº Áõ°¡µÈ SERIAL_SEQUENCE °ªÀ» ¾Ë ¼ö ¾øÀ¸¹Ç·Î Mobile·Î ´ëÃ¼
+            //5000ê±´ ì´í•˜ ëŒ€ëŸ‰ë°œì†¡ì˜ ê²½ìš°, ì‘ì—… íš¨ìœ¨ì„ ìœ„í•´ ë°°ì¹˜ë™ì‘ ìˆ˜í–‰
+            //ë°°ì¹˜ë™ì‘ì€ ì¦ê°€ëœ SERIAL_SEQUENCE ê°’ì„ ì•Œ ìˆ˜ ì—†ìœ¼ë¯€ë¡œ Mobileë¡œ ëŒ€ì²´
             case RANGE_MULTI:
                 sendToMulti();
                 break;
-            //5000°Ç ÀÌ»ó ´ë·®¹ß¼ÛÀÇ °æ¿ì, ÀÛ¾÷ È¿À²À» À§ÇØ ºñµ¿±â ¹èÄ¡µ¿ÀÛ ¼öÇà
-            //ºñµ¿±â ¹èÄ¡µ¿ÀÛÀº Áõ°¡µÈ SERIAL_SEQUENCE °ªÀ» ¾Ë ¼ö ¾øÀ¸¹Ç·Î BATCH_SEQUENCE·Î ´ëÃ¼
+            //5000ê±´ ì´ìƒ ëŒ€ëŸ‰ë°œì†¡ì˜ ê²½ìš°, ì‘ì—… íš¨ìœ¨ì„ ìœ„í•´ ë¹„ë™ê¸° ë°°ì¹˜ë™ì‘ ìˆ˜í–‰
+            //ë¹„ë™ê¸° ë°°ì¹˜ë™ì‘ì€ ì¦ê°€ëœ SERIAL_SEQUENCE ê°’ì„ ì•Œ ìˆ˜ ì—†ìœ¼ë¯€ë¡œ BATCH_SEQUENCEë¡œ ëŒ€ì²´
             case RANGE_MULTI_ASYNC:
                 sendToMultiAsync();
                 break;
@@ -200,7 +200,7 @@ abstract public class MobileMessageHandler<T> extends BaseProcessHandler {
     }
 
     protected void setRecipients(String messageType, String title, String message) throws ProcessException {
-        //¼ö½ÅÀÚ Collection °æ¿ì, °³º° ¼ø¹øÀ» ºÎ¿©ÇÏ¿© Parameter ¼³Á¤ ÈÄ Collection »èÁ¦
+        //ìˆ˜ì‹ ì Collection ê²½ìš°, ê°œë³„ ìˆœë²ˆì„ ë¶€ì—¬í•˜ì—¬ Parameter ì„¤ì • í›„ Collection ì‚­ì œ
         if (request.isParameterContainsKey("recipients")) {
             AtomicInteger order = new AtomicInteger(1);
 
@@ -211,8 +211,8 @@ abstract public class MobileMessageHandler<T> extends BaseProcessHandler {
             request.remove("recipients");
         }
 
-        //º¯¼ö-¼ö½ÅÀÚ Collection ÇüÅÂÀÇ °æ¿ì(Template¿¡ º¯¼ö¿Í ¼ö½ÅÀÚ°¡ ´Ù¸¥ Á¶ÇÕ), °³º° Á¶¸³
-        //¼ö½ÅÀÚ Collection °æ¿ì(Template¿¡ ¼ö½ÅÀÚ¸¸ ´Ù¸¥ °æ¿ì), ¼ö½ÅÀÚ ±âÁØÀ¸·Î Á¶¸³
+        //ë³€ìˆ˜-ìˆ˜ì‹ ì Collection í˜•íƒœì˜ ê²½ìš°(Templateì— ë³€ìˆ˜ì™€ ìˆ˜ì‹ ìê°€ ë‹¤ë¥¸ ì¡°í•©), ê°œë³„ ì¡°ë¦½
+        //ìˆ˜ì‹ ì Collection ê²½ìš°(Templateì— ìˆ˜ì‹ ìë§Œ ë‹¤ë¥¸ ê²½ìš°), ìˆ˜ì‹ ì ê¸°ì¤€ìœ¼ë¡œ ì¡°ë¦½
         if (request.isParameterContainsKey("bind-recipients")) {
             for (String bindRecipients : request.get("bind-recipients").split("\\|")) {
                 String[] parameters = bindRecipients.split(";");

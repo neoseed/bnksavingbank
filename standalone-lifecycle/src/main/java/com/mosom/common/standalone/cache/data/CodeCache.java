@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : CodeCache
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.17)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.17)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Cache ¼­ºñ½ºÀÇ ±¸ÇöÃ¼
+ * í”„ë¡œê·¸ë¨ëª… : CodeCache
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.17)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.17)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Cache ì„œë¹„ìŠ¤ì˜ êµ¬í˜„ì²´
  */
 package com.mosom.common.standalone.cache.data;
 
@@ -259,7 +259,7 @@ public class CodeCache extends ScheduleCache<ImmutableCode> implements ISelfMana
     }
 
     /**
-     * DmdUtil.getCode(DmdConnection con, String key1, String key2, String option) ´ëÀÀ
+     * DmdUtil.getCode(DmdConnection con, String key1, String key2, String option) ëŒ€ì‘
      */
     public String value(String key1, String key2, String option) throws CacheableException {
         return value(key1, key2, Integer.parseInt(option));

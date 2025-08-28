@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : BaseProcessHandler
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.03.08)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.03.08)
- * Àû¡¡¡¡¡¡¿ä : ¾÷¹«¸Á³» ½Ã½ºÅÛ REST API Service - ÀÀ´äÁ¦°øÀÚ ±âº» ±¸ÇöÃ¼
+ * í”„ë¡œê·¸ë¨ëª… : BaseProcessHandler
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.03.08)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.03.08)
+ * ì ã€€ã€€ã€€ìš” : ì—…ë¬´ë§ë‚´ ì‹œìŠ¤í…œ REST API Service - ì‘ë‹µì œê³µì ê¸°ë³¸ êµ¬í˜„ì²´
  */
 package com.mosom.common.standalone.restful.handler;
 

@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : SchedulerTypeNames
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : Scheduler À¯Çü ÀÌ¸§
+ * í”„ë¡œê·¸ë¨ëª… : SchedulerTypeNames
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : Scheduler ìœ í˜• ì´ë¦„
  */
 package com.mosom.common.standalone.watcher.scheduler;
 

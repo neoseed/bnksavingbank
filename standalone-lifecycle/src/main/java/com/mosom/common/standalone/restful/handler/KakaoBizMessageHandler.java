@@ -1,9 +1,9 @@
 /*
- * ÇÁ·Î±×·¥¸í : KakaoBizMessageHandler
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.03.08)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.03.08)
- * Àû¡¡¡¡¡¡¿ä : ¾÷¹«¸Á³» ½Ã½ºÅÛ REST API Service - ÀÀ´ä Á¦°øÀÚ KakaoBizMessage
- * Kakao Àü¿ë ¹ß¼Û ¹× SMS/MMS Fallback
+ * í”„ë¡œê·¸ë¨ëª… : KakaoBizMessageHandler
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.03.08)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.03.08)
+ * ì ã€€ã€€ã€€ìš” : ì—…ë¬´ë§ë‚´ ì‹œìŠ¤í…œ REST API Service - ì‘ë‹µ ì œê³µì KakaoBizMessage
+ * Kakao ì „ìš© ë°œì†¡ ë° SMS/MMS Fallback
  */
 package com.mosom.common.standalone.restful.handler;
 
@@ -29,16 +29,16 @@ import static com.mosom.common.standalone.cache.helper.IdentifierGenerator.seria
  * URI:/{0}/{1}/{2}/kkobizmessage[/{parameter(n)}/{value(n)}..*]
  * Example:/rpa/json/utf8/kkomessage
  *         /type/kx/code/202202210052
- *         /bind1/ÀÓ¿¹ÁØ/bind2/130-00-00-0000000/bind3/0000-00-00
+ *         /bind1/ì„ì˜ˆì¤€/bind2/130-00-00-0000000/bind3/0000-00-00
  *         /recipient1/01000000001/recipient2/01000000002
- * Example Message code:202202210052(Àû±İÀÌ¿¬¸¸±â¾È³»)
- * [BNKÀúÃàÀºÇà] #{°í°´¸í}´ÔÀÇ #{°èÁÂ¹øÈ£} #{ÀÏÀÚ} ¸¸±âÀÌ¿¬ (°¡Á·´ë¸® ÇØÁö½Ã À§ÀÓ¼­·ùÇÊ¿ä)
+ * Example Message code:202202210052(ì ê¸ˆì´ì—°ë§Œê¸°ì•ˆë‚´)
+ * [BNKì €ì¶•ì€í–‰] #{ê³ ê°ëª…}ë‹˜ì˜ #{ê³„ì¢Œë²ˆí˜¸} #{ì¼ì} ë§Œê¸°ì´ì—° (ê°€ì¡±ëŒ€ë¦¬ í•´ì§€ì‹œ ìœ„ì„ì„œë¥˜í•„ìš”)
  * 0:Requester
  * 1:Response Type
  * 2:Response Charset
  * kkobizmessage:Response Provider
  * N:PARAMETER(n), VALUE(n)
- * Requester, Response Type, Response Charset, Response Provider¸¦ Á¦¿ÜÇÑ ¸ğµç Parameter´Â POST ¹æ½Ä »ç¿ë °¡´É
+ * Requester, Response Type, Response Charset, Response Providerë¥¼ ì œì™¸í•œ ëª¨ë“  ParameterëŠ” POST ë°©ì‹ ì‚¬ìš© ê°€ëŠ¥
  */
 public class KakaoBizMessageHandler extends MobileMessageHandler<KakaoBizMessageHandler.MessageSpecification> {
 
@@ -55,11 +55,11 @@ public class KakaoBizMessageHandler extends MobileMessageHandler<KakaoBizMessage
     public enum MessageTypes {
 
         /**
-         * KX : Push Talk Àü¿ë
-         * KS : Push Talk fallback ºÎ´Ş SMS(´Ü¹®)
-         * KM : Push Talk fallback ºÎ´Ş LMS(Àå¹®)
-         * XS : SMS(´Ü¹®) Àü¿ë
-         * XM : LMS(Àå¹®) Àü¿ë
+         * KX : Push Talk ì „ìš©
+         * KS : Push Talk fallback ë¶€ë‹¬ SMS(ë‹¨ë¬¸)
+         * KM : Push Talk fallback ë¶€ë‹¬ LMS(ì¥ë¬¸)
+         * XS : SMS(ë‹¨ë¬¸) ì „ìš©
+         * XM : LMS(ì¥ë¬¸) ì „ìš©
          */
         KX, KS, KM, XS, XM
 
@@ -79,7 +79,7 @@ public class KakaoBizMessageHandler extends MobileMessageHandler<KakaoBizMessage
         final String mobile;
 
 
-        //´Ù¸¥ Service Domain¿¡¼­ È£ÃâÇÒ °æ¿ì Requesters.{NAME}.channelCode() °ªÀ» ÇÒ´ç
+        //ë‹¤ë¥¸ Service Domainì—ì„œ í˜¸ì¶œí•  ê²½ìš° Requesters.{NAME}.channelCode() ê°’ì„ í• ë‹¹
         final String senderChannel;
 
         String sender;
@@ -137,11 +137,11 @@ public class KakaoBizMessageHandler extends MobileMessageHandler<KakaoBizMessage
 
     @Override
     protected void validation() throws ProcessException {
-        //Message Type È®ÀÎ
+        //Message Type í™•ì¸
         validateAndNormalizeMessageType();
-        //Template Code È®ÀÎ
+        //Template Code í™•ì¸
         validateMessageContents();
-        //¼ö½ÅÀÚ È®ÀÎ
+        //ìˆ˜ì‹ ì í™•ì¸
         validateRecipients();
     }
 
@@ -154,7 +154,7 @@ public class KakaoBizMessageHandler extends MobileMessageHandler<KakaoBizMessage
 
         try {
             messageType = messageType.toUpperCase();
-            MessageTypes.valueOf(messageType); // À¯È¿¼º °Ë»ç
+            MessageTypes.valueOf(messageType); // ìœ íš¨ì„± ê²€ì‚¬
             request.set(MessageHubHandler.Preconditions.type.name(), messageType);
         } catch (IllegalArgumentException e) {
             throw new ProcessException("[MessageType] not specified.(" + e.getMessage() + ")", e);

@@ -1,9 +1,9 @@
 /*
- * ÇÁ·Î±×·¥¸í : MessageHubHandler
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.07.09)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.07.09)
- * Àû¡¡¡¡¡¡¿ä : ¾÷¹«¸Á³» ½Ã½ºÅÛ REST API Service - ÀÀ´ä Á¦°øÀÚ MessageHub(LGU+)
- * Kakao, RCS, SMS/MMS ÅëÇÕ ¹ß¼Û ¹× ARS(ALIMTALK->RCS->SMS/MMS) Fallback
+ * í”„ë¡œê·¸ë¨ëª… : MessageHubHandler
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.07.09)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.07.09)
+ * ì ã€€ã€€ã€€ìš” : ì—…ë¬´ë§ë‚´ ì‹œìŠ¤í…œ REST API Service - ì‘ë‹µ ì œê³µì MessageHub(LGU+)
+ * Kakao, RCS, SMS/MMS í†µí•© ë°œì†¡ ë° ARS(ALIMTALK->RCS->SMS/MMS) Fallback
  */
 package com.mosom.common.standalone.restful.handler;
 
@@ -29,16 +29,16 @@ import static com.mosom.common.standalone.cache.helper.IdentifierGenerator.seria
  * URI:/{0}/{1}/{2}/messagehub[/{parameter(n)}/{value(n)}..*]
  * Example:/rpa/json/utf8/messagehub
  *         /type/alimtalk/code/202202210052
- *         /bind1/ÀÓ¿¹ÁØ/bind2/130-00-00-0000000/bind3/0000-00-00
+ *         /bind1/ì„ì˜ˆì¤€/bind2/130-00-00-0000000/bind3/0000-00-00
  *         /recipient1/01000000001/recipient2/01000000002
- * Example Message code:202202210052(Àû±İÀÌ¿¬¸¸±â¾È³»)
- * [BNKÀúÃàÀºÇà] #{°í°´¸í}´ÔÀÇ #{°èÁÂ¹øÈ£} #{ÀÏÀÚ} ¸¸±âÀÌ¿¬ (°¡Á·´ë¸® ÇØÁö½Ã À§ÀÓ¼­·ùÇÊ¿ä)
+ * Example Message code:202202210052(ì ê¸ˆì´ì—°ë§Œê¸°ì•ˆë‚´)
+ * [BNKì €ì¶•ì€í–‰] #{ê³ ê°ëª…}ë‹˜ì˜ #{ê³„ì¢Œë²ˆí˜¸} #{ì¼ì} ë§Œê¸°ì´ì—° (ê°€ì¡±ëŒ€ë¦¬ í•´ì§€ì‹œ ìœ„ì„ì„œë¥˜í•„ìš”)
  * 0:Requester
  * 1:Response Type
  * 2:Response Charset
  * messagehub:Response Provider
  * N:PARAMETER(n), VALUE(n)
- * Requester, Response Type, Response Charset, Response Provider¸¦ Á¦¿ÜÇÑ ¸ğµç Parameter´Â POST ¹æ½Ä »ç¿ë °¡´É
+ * Requester, Response Type, Response Charset, Response Providerë¥¼ ì œì™¸í•œ ëª¨ë“  ParameterëŠ” POST ë°©ì‹ ì‚¬ìš© ê°€ëŠ¥
  */
 public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.MessageSpecification> {
 
@@ -58,10 +58,10 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
          * MMS
          * GDS        : Global SMS
          * RCS
-         * ALIMTALK   : Kakao ¾Ë¸²Åå
-         * FRIENDTALK : Kakao Ä£±¸Åå
-         * PUSH       : ¾ÛÇª½Ã
-         * UMS        : ÅëÇÕ ÅÛÇÃ¸´
+         * ALIMTALK   : Kakao ì•Œë¦¼í†¡
+         * FRIENDTALK : Kakao ì¹œêµ¬í†¡
+         * PUSH       : ì•±í‘¸ì‹œ
+         * UMS        : í†µí•© í…œí”Œë¦¿
          */
         SMS, MMS, GDS, RCS, ALIMTALK, FRIENDTALK, PUSH, UMS
 
@@ -88,7 +88,7 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
 
         final String mobile;
 
-        //´Ù¸¥ Service Domain¿¡¼­ È£ÃâÇÒ °æ¿ì Requesters.{NAME}.channelCode() °ªÀ» ÇÒ´ç
+        //ë‹¤ë¥¸ Service Domainì—ì„œ í˜¸ì¶œí•  ê²½ìš° Requesters.{NAME}.channelCode() ê°’ì„ í• ë‹¹
         final String senderChannel;
 
         String fallbackChannel;
@@ -136,13 +136,13 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
 
     @Override
     protected void validation() throws ProcessException {
-        //Message Type È®ÀÎ
+        //Message Type í™•ì¸
         MessageTypes messageType = validateAndNormalizeMessageType();
-        //Template Code, Title, Message È®ÀÎ
+        //Template Code, Title, Message í™•ì¸
         validateMessageContents(messageType);
-        //¼ö½ÅÀÚ È®ÀÎ
+        //ìˆ˜ì‹ ì í™•ì¸
         validateRecipients();
-        //Fallback È®ÀÎ
+        //Fallback í™•ì¸
         validateAndSetFallback(messageType);
     }
 
@@ -155,7 +155,7 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
 
         try {
             messageType = messageType.toUpperCase();
-            MessageTypes result = MessageTypes.valueOf(messageType); // À¯È¿¼º °Ë»ç
+            MessageTypes result = MessageTypes.valueOf(messageType); // ìœ íš¨ì„± ê²€ì‚¬
             request.set(Preconditions.type.name(), messageType);
 
             return result;
@@ -189,12 +189,12 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
         String fallbackType = request.get("fallback");
 
         if (fallbackType == null) {
-            //fallback ¹ÌÁöÁ¤ ½Ã ±âº»°ª ¼³Á¤
+            //fallback ë¯¸ì§€ì • ì‹œ ê¸°ë³¸ê°’ ì„¤ì •
             setDefaultFallback(messageType);
             return;
         }
 
-        //»ç¿ëÀÚ°¡ ÁöÁ¤ÇÑ fallback À¯È¿¼º °Ë»ç
+        //ì‚¬ìš©ìê°€ ì§€ì •í•œ fallback ìœ íš¨ì„± ê²€ì‚¬
         FallbackTypes specifiedFallbackType;
 
         try {
@@ -203,13 +203,13 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
             throw new ProcessException("[FallbackType] not specified.(" + e.getMessage() + ")", e);
         }
 
-        // NONEÀº Ç×»ó Çã¿ë
+        // NONEì€ í•­ìƒ í—ˆìš©
         if (FallbackTypes.NONE == specifiedFallbackType) {
             request.set("fallback", specifiedFallbackType.name());
             return;
         }
 
-        // ¸Ş½ÃÁö Å¸ÀÔ°ú È£È¯¼º °Ë»ç
+        // ë©”ì‹œì§€ íƒ€ì…ê³¼ í˜¸í™˜ì„± ê²€ì‚¬
         validateFallbackCompatibilityAndSetFallback(messageType, specifiedFallbackType);
     }
 
@@ -252,7 +252,7 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
             case FRIENDTALK:
             case PUSH:
             case UMS:
-                //³ª¸ÓÁö À¯ÇüÀº fallback ÀÇ¹Ì°¡ ¾øÀ¸¹Ç·Î NONEÀ¸·Î °­Á¦ ¼³Á¤
+                //ë‚˜ë¨¸ì§€ ìœ í˜•ì€ fallback ì˜ë¯¸ê°€ ì—†ìœ¼ë¯€ë¡œ NONEìœ¼ë¡œ ê°•ì œ ì„¤ì •
                 log().info("MessageType[" + messageType + "] does not support fallback. Setting to NONE.");
                 finalFallbackType = FallbackTypes.NONE;
                 break;
@@ -267,7 +267,7 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
         String title = request.get("title");
         String message = request.get("message");
 
-        //ALIMTALKÀÇ °æ¿ì Title, ¹ÙÀÎµù Message ÇÒ´ç
+        //ALIMTALKì˜ ê²½ìš° Title, ë°”ì¸ë”© Message í• ë‹¹
         if (messageType.equals(MessageTypes.ALIMTALK.name())) {
             ImmutableMessageHubTemplate template = findMessageTemplate(request.get("code"));
             title = template.getTitle();
@@ -317,20 +317,20 @@ public class MessageHubHandler extends MobileMessageHandler<MessageHubHandler.Me
             , boolean isMulti
             , long sequence) throws ProcessException {
         try {
-            //01 CLIENT_KEY / °íÀ¯½Äº°ÀÚ / [GETUMSKEY(P_SYSTEM_CODE NUMBER) ÃÑ 20ÀÚ¸®] = YYYYMMDD(8ÀÚ¸®) + ½Ã½ºÅÛÄÚµå(2ÀÚ¸®) + SEQUNECE
-            //02 REQ_CH / ¹ß¼ÛÃ¤³Î / SMS, MMS, GDS(Global SMS), RCS, ALIMTALK, FRIENDTALK, PUSH, UMS, ARS(ALIMTALK/RCS/SMS or MMS)
-            //03 TRAFFIC_TYPE / ¹ß¼Û¹æ½Ä / (normal:ÀÏ¹İ (default), real:½Ç½Ã°£/Áß¿ä, batch:¸¶ÄÉÆÃ ¶Ç´Â ±¤°í)
-            //04 REQ_DATE / ¹ß¼Û¿äÃ»½Ã°£ / ¿¹¾à¹ß¼Û(¹Ì·¡½Ã°£)ÀÌ ¾Æ´Ñ °æ¿ì ÇöÀç½Ã°£
-            //05 CALLBACK_NUMBER / ¹ß½Å¹øÈ£
-            //06 DEPT / ¹ß½ÅºÎ¼­
-            //07 PHONE / ¼ö½ÅÀÚ
-            //08 MSG / º»¹®
-            //09 TITLE / Á¦¸ñ
-            //10 KAKAO_TEMPLATE_CODE / Ä«Ä«¿ÀÅÛÇÃ¸´ÄÚµå
-            //11 ETC1 / ¹ß¼ÛÃ¤³ÎÄÚµå
-            //12 ETC3 / ¹èÄ¡¹ß¼ÛSERIAL
-            //13 ETC4 / °í°´¹øÈ£
-            //14 ETC5 / ´ã´çÀÚ
+            //01 CLIENT_KEY / ê³ ìœ ì‹ë³„ì / [GETUMSKEY(P_SYSTEM_CODE NUMBER) ì´ 20ìë¦¬] = YYYYMMDD(8ìë¦¬) + ì‹œìŠ¤í…œì½”ë“œ(2ìë¦¬) + SEQUNECE
+            //02 REQ_CH / ë°œì†¡ì±„ë„ / SMS, MMS, GDS(Global SMS), RCS, ALIMTALK, FRIENDTALK, PUSH, UMS, ARS(ALIMTALK/RCS/SMS or MMS)
+            //03 TRAFFIC_TYPE / ë°œì†¡ë°©ì‹ / (normal:ì¼ë°˜ (default), real:ì‹¤ì‹œê°„/ì¤‘ìš”, batch:ë§ˆì¼€íŒ… ë˜ëŠ” ê´‘ê³ )
+            //04 REQ_DATE / ë°œì†¡ìš”ì²­ì‹œê°„ / ì˜ˆì•½ë°œì†¡(ë¯¸ë˜ì‹œê°„)ì´ ì•„ë‹Œ ê²½ìš° í˜„ì¬ì‹œê°„
+            //05 CALLBACK_NUMBER / ë°œì‹ ë²ˆí˜¸
+            //06 DEPT / ë°œì‹ ë¶€ì„œ
+            //07 PHONE / ìˆ˜ì‹ ì
+            //08 MSG / ë³¸ë¬¸
+            //09 TITLE / ì œëª©
+            //10 KAKAO_TEMPLATE_CODE / ì¹´ì¹´ì˜¤í…œí”Œë¦¿ì½”ë“œ
+            //11 ETC1 / ë°œì†¡ì±„ë„ì½”ë“œ
+            //12 ETC3 / ë°°ì¹˜ë°œì†¡SERIAL
+            //13 ETC4 / ê³ ê°ë²ˆí˜¸
+            //14 ETC5 / ë‹´ë‹¹ì
             pstmt.setString(1, messageSpecification.senderChannel);
             pstmt.setString(2, messageSpecification.messageType);
             pstmt.setString(3, isMulti ? BATCH.name().toLowerCase() : REAL.name().toLowerCase());

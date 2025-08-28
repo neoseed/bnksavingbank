@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : DataSourceProvider
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2023.04.13)
- * Àû¡¡¡¡¡¡¿ä : Non Transaction DataSource Provider
+ * í”„ë¡œê·¸ë¨ëª… : DataSourceProvider
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2023.04.13)
+ * ì ã€€ã€€ã€€ìš” : Non Transaction DataSource Provider
  */
 package com.mosom.common.standalone;
 

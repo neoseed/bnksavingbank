@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : UnifyMobileMessageAgentStatus
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : UnifyMobileMessage Agent Status
+ * í”„ë¡œê·¸ë¨ëª… : UnifyMobileMessageAgentStatus
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : UnifyMobileMessage Agent Status
  */
 package com.mosom.common.standalone.watcher.monitor;
 
@@ -25,16 +25,16 @@ public class UnifyMobileMessageAgentStatus extends UnifyMobileMessageStatus impl
 
     private boolean triggerWatcherSwitch;
 
-    //»óÅÂÄÚµå:NORMAL(Á¤»ó), ABNORMAL(ºñÁ¤»ó)
+    //ìƒíƒœì½”ë“œ:NORMAL(ì •ìƒ), ABNORMAL(ë¹„ì •ìƒ)
     private OverallStatusCode overallStatusCode;
 
-    //¹ß¼Û ´ë±â»óÅÂÀÇ Queue °¹¼ö
+    //ë°œì†¡ ëŒ€ê¸°ìƒíƒœì˜ Queue ê°¯ìˆ˜
     private int waitingQueueCount;
 
-    //Agent Error ÄÚµå°¡ ±â·ÏµÈ Log °¹¼ö
+    //Agent Error ì½”ë“œê°€ ê¸°ë¡ëœ Log ê°¯ìˆ˜
     private int agentErrorLogCount;
 
-    //ÅëÁö SMS¸¦ ¼ö½ÅÇÏ´Â ´ë»óÀÚ
+    //í†µì§€ SMSë¥¼ ìˆ˜ì‹ í•˜ëŠ” ëŒ€ìƒì
     private final List<String> recipients;
 
 

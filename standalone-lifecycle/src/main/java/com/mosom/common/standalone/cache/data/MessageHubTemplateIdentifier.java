@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : MessageHubTemplateIdentifier
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.07.09)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.07.09)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Cache ¼­ºñ½ºÀÇ Model Key
+ * í”„ë¡œê·¸ë¨ëª… : MessageHubTemplateIdentifier
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.07.09)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.07.09)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Cache ì„œë¹„ìŠ¤ì˜ Model Key
  */
 package com.mosom.common.standalone.cache.data;
 

@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : CodeCacheFilter
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ CodeCache Data Filter
+ * í”„ë¡œê·¸ë¨ëª… : CodeCacheFilter
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ CodeCache Data Filter
  */
 package com.mosom.common.standalone.cache.data;
 

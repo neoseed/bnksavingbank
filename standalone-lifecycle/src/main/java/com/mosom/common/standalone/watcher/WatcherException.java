@@ -1,8 +1,8 @@
 /*
- * ÇÁ·Î±×·¥¸í : WatcherException
- * ¼³¡¡°è¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * ÀÛ¡¡¼º¡¡ÀÚ : Thomas Parker(ÀÓ¿¹ÁØ) - (2025.08.04)
- * Àû¡¡¡¡¡¡¿ä : µ¶¸³ Watcher ¼­ºñ½ºÀÇ Exception
+ * í”„ë¡œê·¸ë¨ëª… : WatcherException
+ * ì„¤ã€€ê³„ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì‘ã€€ì„±ã€€ì : Thomas Parker(ì„ì˜ˆì¤€) - (2025.08.04)
+ * ì ã€€ã€€ã€€ìš” : ë…ë¦½ Watcher ì„œë¹„ìŠ¤ì˜ Exception
  */
 package com.mosom.common.standalone.watcher;
 
